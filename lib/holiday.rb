@@ -57,7 +57,7 @@ def all_supplies_in_holidays(holiday_hash)
    holidays.each do |holiday, items|
      new_array = []
               if holiday.to_s.include?("_")
-                individual_holiday = holiday.to_s.split("_")
+                  individual_holiday = holiday.to_s.split("_")
                   individual_holiday.each do |word|
                     new_array.push(word.capitalize)
                     puts "  #{new_array.join(" ")}: #{items.join(", ")}"
@@ -69,7 +69,6 @@ def all_supplies_in_holidays(holiday_hash)
         end
 
    end
-  new_array=[]
 end
 
 def all_holidays_with_bbq(holiday_hash)
