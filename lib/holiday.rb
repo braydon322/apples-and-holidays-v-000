@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
                 new_array.push(word.capitalize)
               end
         end
-        puts "  #{new_array.join}: #{items.join(", ")}"
+        return new_array
    end
 
 end
