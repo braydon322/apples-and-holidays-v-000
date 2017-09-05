@@ -60,10 +60,9 @@ def all_supplies_in_holidays(holiday_hash)
               individual_holiday.each do |word|
                 new_array.push(word.capitalize)
                 puts "  #{new_array.join(" ")}: #{items.join(", ")}"
-
               end
         end
-
+        new_array=[]
    end
 
 end
