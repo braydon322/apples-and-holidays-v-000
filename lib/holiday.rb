@@ -60,6 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
       while i < individual_holiday.length
         new_array[i] = individual_holiday[i].capitalize
         individual_holiday = new_array.to_s
+        i+=1
       end
        puts "  #{individual_holiday}: #{items.join(", ")}"
 
