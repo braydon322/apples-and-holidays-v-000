@@ -54,6 +54,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons, holidays|
    puts "#{seasons.to_s.capitalize}:"
    holidays.each do |holiday, items|
+     binding.pry
       individual_holiday = holiday.to_s.capitalize
        puts "  #{individual_holiday}: #{items.join(", ")}"
    end
@@ -61,20 +62,11 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_array = []
   new_array = []
-
   holiday_hash.each do |seasons, holidays|
       holidays.each do |holiday, items|
         if items.include?("BBQ")
-          new_holiday = holiday.to_s.split("_")
-          i = 0
-          while i < new_holiday.length
-            new_array[i] = new_holiday[i].capitalize
-            i+=1
-          new_array << holiday_array.to_s
-        end
-
+          new_array << holiday
         end
       end
   end
