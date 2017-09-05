@@ -64,7 +64,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_array = []
   new_array = []
-  
+
   holiday_hash.each do |seasons, holidays|
       holidays.each do |holiday, items|
         if items.include?("BBQ")
@@ -74,6 +74,8 @@ def all_holidays_with_bbq(holiday_hash)
             new_array[i] = new_holiday[i].capitalize
             i+=1
           new_array << holiday_array.to_s
+        end
+          
         end
       end
   end
