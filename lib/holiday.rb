@@ -59,7 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
               individual_holiday.each do |word|
                 new_array.push(word.capitalize)
                 new_array.push(items)
-                return new_array
+                puts new_array
               end
         end
 
