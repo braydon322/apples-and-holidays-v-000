@@ -58,8 +58,8 @@ def all_supplies_in_holidays(holiday_hash)
         individual_holiday = holiday.to_s.split("_")
               individual_holiday.each do |word|
                 new_array.push(word.capitalize)
-                final_holiday = new_array.to_s.flatten
-                puts "#{final_holiday}: #{items.flatten}"
+                final_holiday = new_array.to_s
+                puts "#{final_holiday.strip}: #{items.flatten}"
 
               end
         end
