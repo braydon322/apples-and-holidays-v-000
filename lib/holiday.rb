@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
                 new_array.push(word.capitalize)
               end
         end
-        return new_array
+        puts new_array
    end
 
 end
