@@ -63,7 +63,6 @@ def all_supplies_in_holidays(holiday_hash)
         i+=1
       end
        puts "  #{individual_holiday}: #{items.join(", ")}"
-
    end
   end
 end
